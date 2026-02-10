@@ -1,0 +1,41 @@
+body {
+    font-family: Arial;
+    background: white;
+    padding: 20px;
+}
+
+.outer {
+    border: 2px solid black;
+    width: 95%;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.top {
+    background: #d6d6d6;
+    text-align: center;
+    padding: 10px;
+}
+
+.red {
+    color: red;
+}
+
+.nav-links {
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    padding: 6px 12px;
+    background: #b8d0ff;
+    margin-right: 10px;
+    display: inline-block;
+    border: 1px solid #8899aa;
+}
+
+.bottom a {
+    background: #b5efb5;
+    border-color: #7cbf7c;
+}
