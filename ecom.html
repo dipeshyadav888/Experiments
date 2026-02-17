@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My E-Commerce Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+
+        header {
+            background: #222;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 10px;
+            text-decoration: none;
+        }
+
+        .products {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .product {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 15px;
+            text-align: center;
+            width: 220px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .product img {
+            width: 150px;
+            height: 150px;
+        }
+
+        button {
+            background: green;
+            color: white;
+            padding: 8px 12px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        button:hover {
+            background: darkgreen;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        #cart {
+            text-align: center;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>My Online Store</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Cart</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<div id="cart">Cart Items: 0</div>
+
+<section class="products">
+
+    <div class="product">
+        <img src="https://via.placeholder.com/150">
+        <h3>Smart Watch</h3>
+        <p>₹1999</p>
+        <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="https://via.placeholder.com/150">
+        <h3>Headphones</h3>
+        <p>₹1499</p>
+        <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="https://via.placeholder.com/150">
+        <h3>Mobile Phone</h3>
+        <p>₹12999</p>
+        <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 My E-Commerce Website</p>
+</footer>
+
+<script>
+    let count = 0;
+
+    function addToCart() {
+        count++;
+        document.getElementById("cart").innerText = "Cart Items: " + count;
+        alert("Product added to cart!");
+    }
+</script>
+
+</body>
+</html>
